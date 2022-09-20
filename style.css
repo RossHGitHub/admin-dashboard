@@ -112,9 +112,54 @@ p {
 .main {
     background-color: #f5f5f5;
     grid-area: 2 / 2 / 6 / 5;
+    overflow: scroll;
+}
+
+.main-container{
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
 
 .right {
     background-color: #f5f5f5;
     grid-area: 2 / 5 / 6 / 6; 
+}
+
+#project-header {
+    padding-top: 20px;
+    margin-left: 0;
+    grid-area: 1 / 1 / 2 / 3;
+
+
+}
+
+.modal{
+    height: 250px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: white;
+    border-left: orange solid 10px;
+    box-shadow: 2px 2px 5px gray;
+    margin: 20px 40px 40px 0px;
+}
+
+.modal-header{
+    margin: 40px 0px 0px 20px;
+}
+
+.modal-text{
+    color:dimgray ;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 5px 0 0 0;
+    padding-right: 20px;
+}
+.modal-icons{
+    height:30px;
+    margin:40px 20px 0 210px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
 }
